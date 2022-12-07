@@ -1,0 +1,26 @@
+{
+	"model": "GAE",
+
+	"in_channels": 2,
+	"edge_channels": 0,
+	"max_size": 200,
+
+	"enc_gnn_sizes": [50, 50, 50, 50],
+	"enc_nmlp_sizes": [10],
+	"enc_inner_sizes": [5],
+
+	"dec_inner_sizes": [2000],
+	"dec_gnn_sizes": [50, 50, 50, 50],
+	"dec_nmlp_sizes": [2],
+
+	"batch_size": 256,
+	"epochs": 500,
+
+	"lr": [1e-2, 6e-3, 3e-3, 1e-3],
+	"lmb": [1e-5, 1e-6, 1e-7],
+
+	"lr_step": [30, 40],
+	"lr_decay": [0.7, 0.8],
+
+	"grid_search": ["lr", "lmb", "lr_step", "lr_decay"]
+}

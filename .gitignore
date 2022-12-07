@@ -1,0 +1,7 @@
+# Python directories
+__pycache__
+
+# Matlab
+slprj
+*.slxc
+*.asv

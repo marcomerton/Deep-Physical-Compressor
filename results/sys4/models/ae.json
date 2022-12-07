@@ -1,0 +1,16 @@
+{
+	"model": "AE",
+
+	"input_size": 400,
+	"enc_sizes": [300, 200, 100, 5],
+	"dec_sizes": [100, 200, 300, 400],
+
+	"batch_size": 256,
+	"epochs": 500,
+
+	"lr": 1e-3,
+	"lmb": 1e-5,
+
+	"lr_step": 100,
+	"lr_decay": 0.5
+}
