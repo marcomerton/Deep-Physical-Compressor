@@ -16,7 +16,7 @@ In particular, videos of the simulations can be found in the compressed archives
 
 
 
-## How to use the cose
+## How to use the code
 
 Before using the code, make sure to have MATLAB & Simulink installed, as well as a recent python version. `Pytorch` and `torch_geometric` are also required to run the model training.\
 With conda, you can install both using
