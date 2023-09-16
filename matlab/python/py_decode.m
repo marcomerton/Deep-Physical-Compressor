@@ -1,6 +1,4 @@
 function rec = py_decode(q)
-%rec = PY_DECODE Returns the decoded masses configuration.
-% Assumes a model and connectivity (edge_index & edge_attr) are in python workspace.
 
 rec = pyrun([ ...
     "emb = torch.Tensor(np.array(q))" ...

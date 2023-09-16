@@ -60,7 +60,7 @@ In this case, the configuration file requires a `grid_search` field where the na
 
 
 ### Compressed Simulations
-To use the trained models to perform reduced simulations, open MATLAB and use execute the `simulate_reduced.m` script. In order to do so, make sure to have the `matlab` folder included in your search path (e.g. with `addpath('matlab')`). Then prepare the workspace by defining three variables:
+To use the trained models to perform reduced simulations, open MATLAB and use execute the `simulate_reduced.m` script. In order to do so, make sure to have the `matlab` folder (and it subfolders) included in your search path (e.g. with `addpath('matlab')`). Then prepare the workspace by defining three variables:
 
 - `sys_idx`: number of the system to simulate (1 to 5)
 - `sim_idx`: number of the simulation to perform (8 to 37)
@@ -69,3 +69,8 @@ To use the trained models to perform reduced simulations, open MATLAB and use ex
 **Note**: The script requires the folders and subfolders to have the structure created when gathering the test data. Make sure to execute that script first and do not change the folder structure.
 
 Once the reduced simulations are completed, you can reconstruct the full-space state and energy with the `reconstruct_position.py`, `reconstruct_velocity.py` and `reconstruct_energy.py` scripts. These requires the system number and the name of the model used for the simulations.
+
+
+
+### Control Experiments
+To perform the experiments with the latent state controller, open MATLAB and execute the `control_experiments.m` script. In order to do so, make sure to have the `matlab` folder (and its subfolders) included in your search path.

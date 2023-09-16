@@ -1,5 +1,5 @@
 function py_load_data(pos, adj, attr, groups)
-%PY_LOAD_DATA Load the system edge index and edge attributes (PyG) into
+%PY_LOAD_DATA Load the system's edge index and edge attributes (PyG) into
 %python workspace.
 
 pyrun([ ...

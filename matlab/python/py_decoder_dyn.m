@@ -1,7 +1,7 @@
 function [rec, J, Jdot] = py_decoder_dyn(q, dq)
 %[rec, J, Jdot] = PY_DECODER_DYN Returns the structures required to solve
-%the reduced dynamic.
-% Assumes a model and connectivity (edge_index & edge_attr) are in python workspace.
+%the reduced dynamic. Assumes a model and connectivity (edge_index &
+%edge_attr) are in python workspace.
 %   rec  : Reconstructed positions
 %   J    : Jacobian of the decoder
 %   Jdot : Time derivate of the Jacobian (Hessian)
