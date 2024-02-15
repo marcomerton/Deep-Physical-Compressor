@@ -2,14 +2,18 @@
 
 Official repository for the paper:
 
-Compressing dynamical systems via deep learning while preserving their physical structure. Marco Lepri, Davide Bacciu, Cosimo Della Santina. 2022
+Neural Autoencoder-Based Structure-Preserving Model Order Reduction and Control Design for High-Dimensional Physical Systems.\
+Marco Lepri, Davide Bacciu, Cosimo Della Santina.
 
-**TL;DR**: We integrate structure-preserving model order reduction with autoencoders to learn low-dimensional approximations of high-dimensional physical systems conserving their Hamiltonian structure.
+The paper has been accepted for publication in IEEE Control Systems Letters, 2024. You can find it [here](https://ieeexplore.ieee.org/document/10365513).
+
+**TL;DR**: We combine deep autoencoders with structure-preserving model order reduction to learn compressed representations of high-dimensional physical systems, while at the same time conserving their Hamiltonian structure. We also derive a mode-based controller using the learnt system representation and showcase its capabilities in closed-loop control of a simulated soft/deformable robot.
 
 
 Flat AE |  Graph AE
 :------:|:--------:
 <img src="/results/rdm/sys1-sim23.gif" alt="simulation AE" width="350"/>  | <img src="/results/rdm/sys3-sim23.gif" alt="simulation GAE" width="350"/>
+
 
 You can find the results discussed in the paper, as well as additional results, in this repository in the `/results` folder.\
 In particular, videos of the simulations can be found in the compressed archives for each individual system. Results on the latent state analysis are instead located in the `./latent-analysys` subfolder.
